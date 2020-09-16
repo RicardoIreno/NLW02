@@ -1,0 +1,51 @@
+@mixin breakpoint($point) {
+
+    // 599px
+    @if $point == phone-only {
+      @media (max-width: 37.4375em) {
+        @content;
+      }
+    }
+  
+    // 600px
+    @else if $point == phone-up {
+      @media (min-width: 37.5em) { 
+        @content;
+      }
+    }
+  
+    // 899px
+    @else if $point == tab-portrait-only {
+      @media (max-width: 56.1875em) { 
+        @content;
+      }
+    }
+  
+    // 900px
+    @else if $point == tab-portrait-up {
+      @media (min-width: 56.25em) { 
+        @content;
+      } 
+    }
+  
+    // 1199px
+    @else if $point == tab-landscape-only {
+      @media (max-width: 74.9375em) { 
+        @content;
+      }
+    }
+  
+    // 1200px
+    @else if $point == desk-up {
+      @media (min-width: 75em) { 
+        @content;
+      }
+    }
+  
+    @else {
+      @media (min-width: ($point / 16) + 'em') {
+        @content;
+      }
+    }
+  }
+  

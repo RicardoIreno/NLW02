@@ -1,0 +1,106 @@
+// Landing // 
+
+@import '../../assets/styles/breakpoint.scss';
+/* ========== LAYOUT ========== */
+
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  color: var(--color-text-in-primary);
+  background: var(--color-primary);
+}
+
+@include breakpoint ( desk-up ) {
+  #page-landing {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+      "logo hero hero"
+      "buttons . ."
+      ;
+  }
+
+}
+
+.container {
+
+  &-logo {
+    grid-area: logo;
+    justify-self: center;
+    margin-top: 10.2rem;
+
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  &-button {
+    grid-area: buttons;
+    display: flex;  
+    justify-content: center;
+    margin: 2.8rem 0;
+
+  }
+}
+
+.hero-image {
+  grid-area: hero;
+  margin-top: 7rem ;
+  width: 90%;
+}
+
+.total-connnections {
+  display: block;
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+}
+
+/* ========== STYLES ========== */
+
+h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+@mixin button($color, $lighter) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: var(--color-button-text);
+  background-color: var($color);
+
+  width: 20rem;
+  height: 10rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+
+  font: 700 2.0rem Archivo; 
+  text-decoration: none;
+  transition: background-color 0.2s;
+
+  &:hover {  
+    background-color: var($lighter);
+  }
+}
+
+
+.button {  
+  &-study { 
+    @include button(--color-button, --color-button-lighter );
+  }
+  
+  &-give-classes {
+    @include button(--color-button-alt, --color-button-alt-lighter);
+  }
+}
