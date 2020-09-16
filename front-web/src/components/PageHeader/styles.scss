@@ -1,0 +1,76 @@
+// PageHeader //
+
+@import '../../assets/styles/breakpoint.scss';
+
+
+.page-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--color-primary);
+    
+    position: relative;
+    margin: 0 auto;
+    
+};
+
+
+@mixin container {
+    display: flex;
+    width: var(--page-witdh);
+    margin: 0 auto;
+    padding: 1.6rem;
+    
+}
+
+.container {
+    &-top-bar {
+        @include container;
+        justify-content: space-between;
+   
+    }
+    
+    &-content {
+        @include container;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 700px) {
+    .container {
+        &-top-bar {
+            @include container;
+            justify-content: space-between;
+    
+        }
+        
+        &-content {
+            @include container;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+
+
+.image {
+    &-back {
+        height: 1.6rem;
+    }
+
+    &-logo {
+        height: 2.6rem;
+    }
+}
+
+.page-title {
+    max-width: 350px;
+    color: var(--color-text-in-primary);
+    line-height: 4.2rem;
+    font: 700 2.6rem Archivo;
+}
+
+p { color: var(--color-text-in-primary); }
