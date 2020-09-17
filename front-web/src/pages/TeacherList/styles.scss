@@ -1,0 +1,36 @@
+// Teacher List //
+
+@import '../../assets/styles/breakpoint.scss';
+
+// #page-tecaher-list {
+// width: 100vw;
+// height: 100vh;
+// }
+
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+@media (min-width: 700px){
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -44px;
+    }
+
+    #search-teachers {
+        margin-top: 0;
+    }
+
+    .input-block + .input-block {
+        margin-top: 0;
+    }
+}
+
+.teacher-item {
+
+    overflow: hidden;
+}
+
