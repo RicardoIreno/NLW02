@@ -9,7 +9,7 @@ interface ScheduleItem {
 
 };
 
-export default class ClassesControllers {
+export default class ClassesController {
   async index (request: Request, response: Response) {
     const filters = request.query
     const subject = filters.subject as string
@@ -36,9 +36,10 @@ export default class ClassesControllers {
     .join('users', 'classes.user_id', '=', 'users.id')
     .select(['classes.*', 'users.*'])
     
+    return response.json(classes)
     // arrow function não cria escopo para poder usar o this
     // um array pq são todos os dados
-    return response.json(classes)
+    // para o WhereExists, o whereRaw é o mais indicado
   }
   
   async create (request: Request, response: Response) {
