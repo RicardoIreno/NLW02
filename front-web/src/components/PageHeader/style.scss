@@ -3,58 +3,53 @@
 @import '../../assets/styles/breakpoint.scss';
 
 
-.page-header {
-    width: 100vw;
+ 
+@mixin container-header {
     display: flex;
-    flex-direction: column;
-    
-    background-color: var(--color-primary);
-    
-    position: relative;
-    margin: 0 auto;
-    
-};
-
-
-@mixin container {
-    display: flex;
-    width: var(--page-witdh);
     margin: 0 auto;
     padding: 1.6rem;
     
 }
 
-.container {
+.container-header {
+    @include container-header;
+    width: 100vw;
+    // height: 200px;
+    // position: relative;
+    // flex-direction: column;
+    background-color: var(--color-primary);
+
+
     &-top-bar {
-        @include container;
+        @include container-header;
+        width: 90%;
         justify-content: space-between;
    
     }
     
     &-content {
-        @include container;
+        @include container-header;
+        width: 90%;
         flex-direction: column;
         justify-content: flex-start;
     }
 }
 
 @media (min-width: 700px) {
-    .container {
+    .container-header {
         &-top-bar {
-            @include container;
+            @include container-header;
             justify-content: space-between;
     
         }
         
         &-content {
-            @include container;
+            @include container-header;
             flex-direction: column;
             
         }
     }
 }
-
-
 
 .image {
     &-back {
@@ -65,6 +60,8 @@
         height: 2.6rem;
     }
 }
+
+// TYPOGRAPHIC
 
 .page-title {
     max-width: 350px;
