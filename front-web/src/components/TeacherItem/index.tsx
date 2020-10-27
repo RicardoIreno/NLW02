@@ -1,5 +1,6 @@
 import React from 'react'
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
+import './style.scss'
 
 function TeacherItem() {
   return(

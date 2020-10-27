@@ -1,8 +1,9 @@
-import React from 'react';
-import PageHeader from '../../components/PageHeader';
-import TeacherItem from '../../components/TeacherItem';
-import Input from '../../components/form/input';
-import Select from '../../components/form/select';
+import React from 'react'
+import PageHeader from '../../components/PageHeader'
+import TeacherItem from '../../components/TeacherItem'
+import Input from '../../components/form/input'
+import Select from '../../components/form/select'
+import './style.scss' 
 
 function TeacherList() {
   return (
@@ -28,6 +29,7 @@ function TeacherList() {
         </form>
 
         <main>
+          EI!!!
           <TeacherItem /> 
 
         </main>
@@ -35,4 +37,4 @@ function TeacherList() {
     </div>
   )
 }
-export default TeacherList;
+export default TeacherList
