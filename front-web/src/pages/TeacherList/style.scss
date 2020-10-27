@@ -2,13 +2,20 @@
 
 @import '../../assets/styles/breakpoint.scss';
 
-// #page-tecaher-list {
+// #page-teacher-list {
 // width: 100vw;
 // height: 100vh;
+// margin-top: 300px;
 // }
 
 #search-teachers {
     margin-top: 3.2rem;
+}
+
+main {
+    display: grid;
+    width: 100vw;
+    background-color: aqua;
 }
 
 @media (min-width: 700px){
@@ -27,10 +34,5 @@
     .input-block + .input-block {
         margin-top: 0;
     }
-}
-
-.teacher-item {
-
-    overflow: hidden;
 }
 

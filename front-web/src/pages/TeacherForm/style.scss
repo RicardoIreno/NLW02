@@ -4,7 +4,7 @@
 }
 
 main {
-    background-color: ar(--color-box-base);
+    background-color: var(--color-box-base);
     width: 100%;
     max-width: 74rem;
     border-radius: 0.8rem;
