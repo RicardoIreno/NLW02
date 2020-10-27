@@ -1,30 +1,31 @@
-import React, {useState, FormEvent} from 'react';
-import {useHistory} from 'react-router-dom';
-import api from '../../services/api';
-import Input from '../../components/form/input';
-import Textarea from '../../components/form/textarea';
-import PageHeader from '../../components/PageHeader';
-import Select from '../../components/form/select';
-import warninIcon from '../../assets/images/icons/warning.svg';
+import React, {useState, FormEvent} from 'react'
+import {useHistory} from 'react-router-dom'
+import api from '../../services/api'
+import Input from '../../components/form/input'
+import Textarea from '../../components/form/textarea'
+import PageHeader from '../../components/PageHeader'
+import Select from '../../components/form/select'
+import warninIcon from '../../assets/images/icons/warning.svg'
+import './style.scss'
 
 function TeacherForm() {
 
-  const history = useHistory();
-  const [name, setName] = useState('');
-  const [avatar, setAvatar] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
-  const [bio, setBio] = useState('');
-  const [subject, setSubject] = useState('');
-  const [cost, setCost] = useState('');
+  const history = useHistory()
+  const [name, setName] = useState('')
+  const [avatar, setAvatar] = useState('')
+  const [whatsapp, setWhatsapp] = useState('')
+  const [bio, setBio] = useState('')
+  const [subject, setSubject] = useState('')
+  const [cost, setCost] = useState('')
   const [scheduleItems, setScheduleItems] = useState([
       {week_day: 0, from: '', to: ''},
-  ]);
+  ])
     
   function addNewScheduleItem() {
     setScheduleItems([
       ...scheduleItems,
       { week_day: 0, from: '', to: '' }
-    ]);
+    ])
   }
 
   /* 
@@ -40,22 +41,20 @@ function TeacherForm() {
     (
       (scheduleItem, index ) => {
       if (index === position) {
-        return {...scheduleItem, [field]: value };
+        return {...scheduleItem, [field]: value }
       }
 
-      return scheduleItem;
+      return scheduleItem
       }
     )  
-    setScheduleItems(updatedScheduleItems);
+    setScheduleItems(updatedScheduleItems)
   }
 
 
-  function handleCreateClass(e: FormEvent) 
-  {
-    e.preventDefault();
+  function handleCreateClass(e: FormEvent) {
+    e.preventDefault()
 
-    api.post(
-      'classes', {
+    api.post('classes', {
       name,
       avatar,
       whatsapp,
@@ -65,8 +64,8 @@ function TeacherForm() {
       schedule: scheduleItems
     })
     .then( () => { 
-      alert('Cadastro realizado com sucesso');
-      history.push('/');
+      alert('Cadastro realizado com sucesso')
+      history.push('/')
     })
     .catch(
       () => { alert('Cadastro realizado com sucesso')}
@@ -138,7 +137,7 @@ function TeacherForm() {
 
           <fieldset>
             <legend>Horários disponíveis                
-              <button type='submit' onClick={addNewScheduleItem}>
+              <button type='button' onClick={addNewScheduleItem}>
                 + Novo horário
               </button>
             </legend>
@@ -203,4 +202,4 @@ function TeacherForm() {
   )
 }
 
-export default TeacherForm; 
+export default TeacherForm
