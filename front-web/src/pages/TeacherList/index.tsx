@@ -11,6 +11,15 @@ function TeacherList() {
       <PageHeader title="Estes são os proffys disponíveis">      
         
         <form id="search-teachers">    
+        <Select 
+              name="subject" 
+              label="Matéria" 
+              options={[
+                {value: "Artes", label: "Artes" },
+                {value: "Paleontologia", label: "Paleontologia" },
+                {value: "Criminalistica", label: "Criminalistica" },
+              ]}/>
+
           <Select 
             name="week_day"
             label="Dia da semana"
@@ -24,7 +33,6 @@ function TeacherList() {
               {value: '6', label: 'Sábado'},
             ]}/>
 
-            <Input name="Week_day" label="Dia da semana" />
             <Input type="time" name="time" label="Hora" />
         </form>
 
