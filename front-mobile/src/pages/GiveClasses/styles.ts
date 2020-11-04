@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   
   container: {
     flex: 1,
-    backgroundColor: '#c9ffba',
+    backgroundColor: '#b6b5e8',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -17,16 +17,10 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold'
   },
 
-  buttonContainer: {
+  button: {
+    backgroundColor: '#9f92aa',
     width: '50%',
     height: 150,
-    borderRadius: 10,
-    padding: 24,
-    justifyContent: "space-between"
-  },
-
-  buttonPrimary: {
-    backgroundColor: '#6dde40',
   }
 
 })
