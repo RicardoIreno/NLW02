@@ -17,12 +17,17 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold'
   },
 
-  button: {
-    backgroundColor: '#9f92aa',
+  buttonContainer: {
     width: '50%',
     height: 150,
-  }
+    borderRadius: 10,
+    padding: 24,
+    justifyContent: "space-between"
+  },
 
+  buttonPrimary: {
+    backgroundColor: '#6dde40',
+  }
 })
 
 export default styles
