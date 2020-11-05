@@ -9,25 +9,25 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  title: {
-    fontFamily: 'Archivo_400Regular'
-  },
+  // title: {
+  //   fontFamily: 'Archivo_400Regular'
+  // },
 
-  titleBold: {
-    fontFamily: 'Poppins_600SemiBold'
-  },
+  // titleBold: {
+  //   fontFamily: 'Poppins_600SemiBold'
+  // },
 
-  buttonContainer: {
-    width: '50%',
-    height: 150,
-    borderRadius: 10,
-    padding: 24,
-    justifyContent: "space-between"
-  },
+  // buttonContainer: {
+  //   width: '50%',
+  //   height: 150,
+  //   borderRadius: 10,
+  //   padding: 24,
+  //   justifyContent: "space-between"
+  // },
 
-  buttonPrimary: {
-    backgroundColor: '#6dde40',
-  }
+  // buttonPrimary: {
+  //   backgroundColor: '#6dde40',
+  // }
 
 })
 
