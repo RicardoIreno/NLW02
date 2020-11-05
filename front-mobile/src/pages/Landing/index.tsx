@@ -14,19 +14,26 @@ function Landing() {
     navigate('GiveClasses') 
   }
 
+  function handelNavigateToStudyPages() {
+    navigate('Study')
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
        Proffy {'\n'} 
         <Text style={styles.titleBold}>Eu sou o Landing {'\n'} </Text>
+      </Text>
 
         <TouchableOpacity onPress={handleNavigateToGiveClassesPage}
           style={[styles.buttonContainer, styles.buttonPrimary]} >
-        
-          <Text>Eu sou um botão</Text>
-        
+          <Text>GiveClasses</Text>   
         </TouchableOpacity>
-      </Text>
+
+        <TouchableOpacity onPress={handelNavigateToStudyPages}
+          style={[styles.buttonContainer, styles.buttonPrimary]} >
+          <Text>Study</Text>   
+        </TouchableOpacity>
     </View>
   )
 }
