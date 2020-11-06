@@ -5,8 +5,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#c9ffba',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
 
   // title: {
