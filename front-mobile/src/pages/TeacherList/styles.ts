@@ -4,9 +4,13 @@ const styles = StyleSheet.create({
   
   container: {
     flex: 1,
-    backgroundColor: '#c9ffba',
+    backgroundColor: '#e8e8e8',
     // alignItems: 'center',
     // justifyContent: 'center',
+  },
+
+  teacherList: {
+    marginTop: -60,
   },
 
   // title: {
