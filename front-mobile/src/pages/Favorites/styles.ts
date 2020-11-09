@@ -1,10 +1,16 @@
 import { StyleSheet } from 'react-native'
+import { Archivo_400Regular } from '@expo-google-fonts/archivo'
+import { Poppins_600SemiBold } from '@expo-google-fonts/poppins'
 
 const styles = StyleSheet.create({
   
   container: {
     flex: 1,
     backgroundColor: '#c9ffba',
+  },
+
+  teacherList: {
+    marginTop: -60,
   },
 
   title: {

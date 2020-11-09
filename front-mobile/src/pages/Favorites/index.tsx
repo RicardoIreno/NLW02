@@ -1,14 +1,24 @@
 import React from 'react'
-import { View, Text } from 'react-native' 
-
-import styles from './styles'
+import { View, Text, ScrollView } from 'react-native' 
+import TeacherItem from '../../components/TeacherItem'
 import PageHeader from '../../components/PageHeader'
+import styles from './styles'
 
 function Favorites() {
   return (
     <View style={styles.container}> 
       <PageHeader title="Proffys Favoritos" />
-      <Text>Favoritos</Text>
+      <ScrollView 
+        style={styles.teacherList}
+        contentContainerStyle={{
+          paddingHorizontal: 16,
+          paddingBottom: 24,  
+        }}
+      >
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+      </ScrollView>
     </View>
   )
 }
