@@ -13,10 +13,10 @@ const styles = StyleSheet.create({
   },
 
   goBack: {
-    fontFamily: 'Poppins_600SemiBold'
+    //  fontFamily: 'Poppins_600SemiBold'
   },
   title: {
-    fontFamily: 'Poppins_600SemiBold',
+    //  fontFamily: 'Poppins_600SemiBold',
     color: '#fff',
     fontSize: 24,
     lineHeight: 32,
