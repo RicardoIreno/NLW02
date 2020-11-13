@@ -27,7 +27,7 @@ function StudyTabs() {
           height: 20,
         },
         labelStyle: {
-          // fontFamily: Poppins_600SemiBold,
+          // //  fontFamily: Poppins_600SemiBold,
           fontSize: 13,
           marginLeft: 16,
         },

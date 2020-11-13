@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'Archivo_400Regular'
+    //  fontFamily: 'Archivo_400Regular'
   },
 
   titleBold: {
-    fontFamily: 'Poppins_600SemiBold'
+    //  fontFamily: 'Poppins_600SemiBold'
   },
 
   buttonContainer: {
