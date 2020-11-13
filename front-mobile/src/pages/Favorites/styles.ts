@@ -10,15 +10,15 @@ const styles = StyleSheet.create({
   },
 
   teacherList: {
-    marginTop: -60,
+    marginTop: -40,
   },
 
   title: {
-    fontFamily: 'Archivo_400Regular'
+    // //  fontFamily: 'Archivo_400Regular'
   },
 
   titleBold: {
-    fontFamily: 'Poppins_600SemiBold'
+    //  fontFamily: 'Poppins_600SemiBold'
   },
 
   buttonContainer: {
