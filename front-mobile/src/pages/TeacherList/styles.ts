@@ -43,6 +43,21 @@ const styles = StyleSheet.create({
     width: '48%',
   },
 
+  submitButton: {
+    backgroundColor: '#04d361',
+    height: 56,
+    borderRadius: 8,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center', 
+  },
+
+  submitButtonText: {
+    color: '#fff',
+    // //  fontFamily: 'Archivo_700Bold',
+    fontSize: 16,
+  },
+
 
   // title: {
   //   //  fontFamily: 'Archivo_400Regular'
