@@ -18,11 +18,18 @@ const styles = StyleSheet.create({
   },
 
   buttonContainer: {
-    width: '50%',
-    height: 150,
-    borderRadius: 10,
-    padding: 24,
-    justifyContent: "space-between"
+    flexDirection: 'row',
+    justifyContent: "space-between",
+  },
+
+
+  button: {
+    width: '42%',
+    height: 100,
+    borderRadius: 15,
+    justifyContent: 'center',
+    alignContent: 'center'
+
   },
 
   buttonPrimary: {

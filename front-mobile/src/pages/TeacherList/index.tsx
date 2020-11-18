@@ -34,7 +34,7 @@ function TeacherList() {
             <TextInput
               style={styles.input}
               placeholder="Qual a matéria?"
-              placeholderTextColor='#c1ncc'
+              // placeholderTextColor='#c1ncc'
             >
             </TextInput>
 
@@ -45,7 +45,7 @@ function TeacherList() {
                 <TextInput
                   style={styles.input}
                   placeholder="Qual o dia?"
-                  placeholderTextColor='#c1ncc'
+                  // placeholderTextColor='#c1ncc'
                 >
                 </TextInput>
               </View>
@@ -55,7 +55,7 @@ function TeacherList() {
                 <TextInput
                   style={styles.input}
                   placeholder="Qual horário?"
-                  placeholderTextColor='#c1ncc'
+                  // placeholderTextColor='#c1ncc'
                 >
                 </TextInput>
               </View>
