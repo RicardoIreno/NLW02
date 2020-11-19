@@ -36,7 +36,7 @@ function TeacherList() {
   return (
     <div id="page-teacher-list" className="container">
       <PageHeader title="Estes são os proffys disponíveis">      
-        
+
         <form id="search-teachers"> 
           <Select 
               name="subject" 
@@ -72,7 +72,6 @@ function TeacherList() {
             onChange={(e) => {setTime(e.target.value) }}
           />
             <button type="submit" onClick={searchTeachers}>Buscar</button>
-            
         </form>
 
       </PageHeader>
