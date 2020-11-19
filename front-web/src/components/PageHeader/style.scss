@@ -1,27 +1,23 @@
 // PageHeader //
 
 @import '../../assets/styles/breakpoint.scss';
-
-
  
 @mixin container-header {
-    display: flex;
     margin: 0 auto;
-    padding: 1.6rem;
-    
 }
 
 .container-header {
     @include container-header;
+    padding: 1.6rem;
     width: 100vw;
-    // height: 200px;
+    height: 200px;
+    background-color: var(--color-primary);
     // position: relative;
     // flex-direction: column;
-    background-color: var(--color-primary);
-
 
     &-top-bar {
         @include container-header;
+        display: flex;
         width: 90%;
         justify-content: space-between;
    
@@ -38,15 +34,11 @@
 @media (min-width: 700px) {
     .container-header {
         &-top-bar {
-            @include container-header;
-            justify-content: space-between;
-    
+            justify-content: space-between; 
         }
         
         &-content {
-            @include container-header;
-            flex-direction: column;
-            
+            flex-direction: column;       
         }
     }
 }
