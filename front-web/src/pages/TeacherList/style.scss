@@ -2,6 +2,18 @@
 
 @import '../../assets/styles/breakpoint.scss';
 
+.main-teacher-list {
+  background-color: var(--color-box-base);
+  margin: 0 auto;
+  width: 90vw;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+  // height: 100vh;
+  // display: grid;
+}
+
 // #page-teacher-list {
 // width: 100vw;
 // height: 100vh;
@@ -12,19 +24,14 @@
     margin-top: 3.2rem;
 }
 
-main {
-    display: grid;
-    width: 100vw;
-    background-color: aqua;
-}
 
 @media (min-width: 700px){
     #search-teachers {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 16px;
-        position: absolute;
-        bottom: -44px;
+        // position: absolute;
+        // bottom: -44px;
     }
 
     #search-teachers {
