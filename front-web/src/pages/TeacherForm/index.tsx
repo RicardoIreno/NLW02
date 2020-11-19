@@ -80,7 +80,8 @@ function TeacherForm() {
 
       </PageHeader>
 
-      <main>
+
+      <main className="main-teacher-form">
         <form onSubmit={handleCreateClass}>
           <fieldset>
             <legend>Seus dados</legend>
