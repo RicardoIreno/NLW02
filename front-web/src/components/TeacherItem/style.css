@@ -1,0 +1,26 @@
+
+
+.teacher-item {
+  position: relative;
+  background-color: var(--color-box-base);
+  padding: 2px;
+  margin: 2px;
+  overflow: auto;
+  
+}
+
+.button {
+  width: 100%;
+  background: var(--color-secundary);
+  color: var(--color--button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transform: background-color 0.2s;
+  margin-top: 2.4rem;
+
+}

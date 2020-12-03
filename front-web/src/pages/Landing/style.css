@@ -1,0 +1,89 @@
+// Landing // 
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: var(--color-text-in-primary);
+  background: var(--color-primary);
+}
+
+@media (min-width: 700px) {
+  #page-landing {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "logo hero hero" "buttons . .";
+  }
+}
+.container-logo {
+  grid-area: logo;
+  justify-self: center;
+  margin-top: 10.2rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.container-button {
+  grid-area: buttons;
+  display: flex;
+  justify-content: center;
+  margin: 2.8rem 0;
+}
+
+.hero-image {
+  grid-area: hero;
+  margin-top: 7rem;
+  width: 90%;
+}
+
+.total-connnections {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* ========== STYLES ========== */
+h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+.button-study {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-button-text);
+  background-color: var(--color-button);
+  width: 20rem;
+  height: 10rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  font: 700 2rem Archivo;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.button-study:hover {
+  background-color: var(--color-button-lighter);
+}
+.button-give-classes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-button-text);
+  background-color: var(--color-button-alt);
+  width: 20rem;
+  height: 10rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  font: 700 2rem Archivo;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.button-give-classes:hover {
+  background-color: var(--color-button-alt-lighter);
+}

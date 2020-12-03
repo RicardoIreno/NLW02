@@ -1,6 +1,3 @@
-// Teacher List //
-
-@import '../../assets/styles/breakpoint.scss';
 
 .main-teacher-list {
   background-color: var(--color-box-base);
@@ -10,15 +7,11 @@
   margin: -3.2rem auto 3.2rem;
   padding-top: 6.4rem;
   overflow: hidden;
-  // height: 100vh;
-  // display: grid;
+  height: 100vh;
+  display: grid;
 }
 
-// #page-teacher-list {
-// width: 100vw;
-// height: 100vh;
-// margin-top: 300px;
-// }
+
 
 #search-teachers {
     margin-top: 3.2rem;
@@ -26,7 +19,6 @@
 
 button {
     width: 100%;
-    // height: 1,4rem;
     background: var(--color-secundary);
     color: var(--color--button-text);
     border: 0;
@@ -38,7 +30,6 @@ button {
     text-decoration: none;
     transform: background-color 0.2s;
     margin-top: 2.4rem;
-
 }
 
 button:hover {
@@ -50,8 +41,6 @@ button:hover {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 16px;
-        // position: absolute;
-        // bottom: -44px;
     }
 
     #search-teachers {

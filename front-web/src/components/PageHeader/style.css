@@ -1,0 +1,46 @@
+
+.container-header {
+    margin: 0 auto;
+    padding: 1.6rem;
+    width: 100vw;
+    height: 200px;
+    background-color: var(--color-primary);
+  }
+  .container-header-top-bar {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .container-header-content {
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  @media (min-width: 700px) {
+    .container-header-top-bar {
+      justify-content: space-between;
+    }
+    .container-header-content {
+      flex-direction: column;
+    }
+  }
+  .image-back {
+    height: 1.6rem;
+  }
+  .image-logo {
+    height: 2.6rem;
+  }
+  
+  .page-title {
+    max-width: 350px;
+    color: var(--color-text-in-primary);
+    line-height: 4.2rem;
+    font: 700 2.6rem Archivo;
+  }
+  
+  p {
+    color: var(--color-text-in-primary);
+  }
