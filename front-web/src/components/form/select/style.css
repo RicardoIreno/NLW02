@@ -1,4 +1,3 @@
-// SELECT COMPONENT
 
 .select-block  {
     margin-bottom: 1.4rem;
@@ -25,13 +24,11 @@
     font: 1.6rem Archivo;
 }
 
-// todo select-block que se sucede a outro terá um espaçamento
 .select-block + .select-block {
     margin-top: 1.4rem;
 }
 
 
-// bordazinha do mau
 .select-block:focus-within::after {
     content: '';
     width: calc(100% - 3.2rem);

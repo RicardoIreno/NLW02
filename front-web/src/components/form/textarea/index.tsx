@@ -1,5 +1,5 @@
 import React, { TextareaHTMLAttributes } from "react"
-import './style.scss'
+import './style.css'
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   name: string

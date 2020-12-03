@@ -3,7 +3,7 @@ import PageHeader from '../../components/PageHeader'
 import TeacherItem, { Teacher } from '../../components/TeacherItem'
 import Input from '../../components/form/input'
 import Select from '../../components/form/select'
-import './style.scss' 
+import './style.css' 
 import api from '../../services/api'
 
 

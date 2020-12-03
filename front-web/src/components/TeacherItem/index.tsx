@@ -1,7 +1,7 @@
 import React from 'react'
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
 import api from '../../services/api'
-import './style.scss'
+import './style.css'
 
 
 export interface Teacher {

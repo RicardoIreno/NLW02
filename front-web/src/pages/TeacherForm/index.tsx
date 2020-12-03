@@ -6,7 +6,7 @@ import Textarea from '../../components/form/textarea'
 import PageHeader from '../../components/PageHeader'
 import Select from '../../components/form/select'
 import warninIcon from '../../assets/images/icons/warning.svg'
-import './style.scss'
+import './style.css'
 
 function TeacherForm() {
 
